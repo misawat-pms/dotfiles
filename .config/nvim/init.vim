@@ -1,8 +1,10 @@
 "---------------------------
 " Start Neobundle Settings.
 "---------------------------
+" mkdir ~/.config/nvim/bundle
+" git clone https://github.com/Shougo/neobundle.vim ~/.config/nvim/bundle/neobundle.vim
 " bundleで管理するディレクトリを指定
-set runtimepath+=~/.nvim/bundle/neobundle.vim/
+set runtimepath+=~/.config/nvim/bundle/neobundle.vim/
  
 " Required:
 call neobundle#begin(expand('~/.nvim/bundle/'))
@@ -25,9 +27,8 @@ NeoBundleCheck
 " End Neobundle Settings.
 "-------------------------
 "
-set runtimepath+=~/.nvim/bundle/neobundle.vim/
 
-call neobundle#begin(expand('~/.nvim/bundle/'))
+call neobundle#begin(expand('~/.config/nvim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/deoplete.nvim'
 NeoBundle 'Shougo/neosnippet-snippets'
