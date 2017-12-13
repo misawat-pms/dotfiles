@@ -177,7 +177,7 @@ set textwidth=0
 set clipboard=unnamed,unnamedplus,autoselect
 
 " mouse
-set mouse=a
+set mouse=
 
 " for windows path
 set shellslash
