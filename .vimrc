@@ -26,9 +26,9 @@ if dein#load_state(s:dein_dir)
 endif
 
 "" auto install plugins not installed
-if dein#check_install(['vimproc'])
-    call dein#install(['vimproc'])
-endif
+" if dein#check_install(['vimproc'])
+"     call dein#install(['vimproc'])
+" endif
 
 if has('vim_starting') && dein#check_install()
     call dein#install()
@@ -103,7 +103,7 @@ syntax enable
 " filetype settings
 au BufRead,BufNewFile {*.md,*.txt} set filetype=markdown
 au BufRead,BufNewFile {*.coffee} set filetype=coffee
-autocmd filetype coffee,javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
+" autocmd filetype coffee,javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
 
 " open with last cursor position
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\""
@@ -165,9 +165,9 @@ set smartcase
 "set smartindent
 "set autoindent
 set expandtab
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 "set smarttab
 "set cindent
 set textwidth=0
